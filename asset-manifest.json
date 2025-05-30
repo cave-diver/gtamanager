@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gtamanager/static/css/main.c1bc078c.css",
-    "main.js": "/gtamanager/static/js/main.9b0dcec8.js",
+    "main.js": "/gtamanager/static/js/main.ff184767.js",
     "static/media/bg-2048.jpg": "/gtamanager/static/media/bg-2048.c30bfda6864a505de9f8.jpg",
     "static/media/bg-1024.jpg": "/gtamanager/static/media/bg-1024.102134957944537a11fe.jpg",
     "static/media/bg-512.jpg": "/gtamanager/static/media/bg-512.e36a17991c39a9174871.jpg",
@@ -20,10 +20,10 @@
     "index.html": "/gtamanager/index.html",
     "static/media/blank.png": "/gtamanager/static/media/blank.f9bc4eb159991a54d809.png",
     "main.c1bc078c.css.map": "/gtamanager/static/css/main.c1bc078c.css.map",
-    "main.9b0dcec8.js.map": "/gtamanager/static/js/main.9b0dcec8.js.map"
+    "main.ff184767.js.map": "/gtamanager/static/js/main.ff184767.js.map"
   },
   "entrypoints": [
     "static/css/main.c1bc078c.css",
-    "static/js/main.9b0dcec8.js"
+    "static/js/main.ff184767.js"
   ]
 }
