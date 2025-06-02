@@ -326,7 +326,19 @@ export const patchArray = [
                 <li>Added support for the once per day "boost" that the Acid Lab can do.</li>
             </ul>
         </div>
+    </div>,
+    <div className="main">
+        <h1>Version 2.0.3</h1>
+        <div className="indent">
+            <h2>Improvements</h2>
+            <ul>
+                <li>Added support for Cayo Perico.</li>
+                <li>Added support for a warehouse technician 48 min. timer.</li>
+                <li>Added support for a generic 48 min. timer.</li>
+            </ul>
+        </div>
     </div>
+
 ];
 
 

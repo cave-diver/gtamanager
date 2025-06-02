@@ -1385,6 +1385,234 @@ export const PopupSetupWheel = connect((state) => {
     );
 });
 
+export const PopupSetupCayo = connect((state) => {
+    let newProps = {
+        cayo: state.userInfo.cayo,
+    }
+    return newProps;
+})((props) => {
+
+    const dispatch = useDispatch();
+
+    let workingInfo = props.cayo;
+    const [state, setState] = useState(workingInfo);
+
+    function toggleOwned(e) {
+        let newValue = !state.owned;
+        setState((previousState) => update(previousState, {
+            owned: {$set: newValue}
+        }));
+    }
+
+    function toggleNotify(e) {
+        let newValue = !state.notify_while_paused;
+        setState((previousState) => update(previousState, {
+            notify_while_paused: {$set: newValue}
+        }));
+    }
+
+    function resetCooldown(e) {
+        setState((previousState) => update(previousState, {
+            timestamp: {$set: 0}
+        }));
+    }
+
+    function applyChanges(e) {
+        dispatch(setRootObject({ key: "cayo", value: state }));
+        dispatch(popPopup());
+    }
+
+    return (
+        <div id="cayoSetupGUI" className="setupGUI cayo">
+        <div className="heading">
+            <h1>Cayo Perico Setup</h1>
+        </div>
+        <div className="main">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Display:</td>
+                        <td className="onechoice fsz">
+                            <button onClick={toggleOwned} disabled={state.owned} className="button green">Yes</button>
+                            <button onClick={toggleOwned} disabled={!state.owned} className="button red">No</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Notify:</td>
+                        <td className="onechoice fsz">
+                            <button onClick={toggleNotify} disabled={state.notify_while_paused} className="button green">Always</button>
+                            <button onClick={toggleNotify} disabled={!state.notify_while_paused} className="button orange">Only while running</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cooldown:</td>
+                        <td className="fsz">
+                            <button onClick={resetCooldown} disabled={state.timestamp === 0} className="button blue">Reset</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div className="buttons fsz">
+            <button onClick={() => dispatch(popPopup())} className="button red">Cancel</button>
+            <button onClick={applyChanges} className="button red">Apply</button>
+        </div>
+    </div>
+    );
+});
+
+export const PopupSetupGeneric1 = connect((state) => {
+    let newProps = {
+        generic1: state.userInfo.generic1,
+    }
+    return newProps;
+})((props) => {
+
+    const dispatch = useDispatch();
+
+    let workingInfo = props.generic1;
+    const [state, setState] = useState(workingInfo);
+
+    function toggleOwned(e) {
+        let newValue = !state.owned;
+        setState((previousState) => update(previousState, {
+            owned: {$set: newValue}
+        }));
+    }
+
+    function toggleNotify(e) {
+        let newValue = !state.notify_while_paused;
+        setState((previousState) => update(previousState, {
+            notify_while_paused: {$set: newValue}
+        }));
+    }
+
+    function resetCooldown(e) {
+        setState((previousState) => update(previousState, {
+            timestamp: {$set: 0}
+        }));
+    }
+
+    function applyChanges(e) {
+        dispatch(setRootObject({ key: "generic1", value: state }));
+        dispatch(popPopup());
+    }
+
+    return (
+        <div id="generic1SetupGUI" className="setupGUI generic1">
+        <div className="heading">
+            <h1>Special Cargo Tech Setup</h1>
+        </div>
+        <div className="main">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Display:</td>
+                        <td className="onechoice fsz">
+                            <button onClick={toggleOwned} disabled={state.owned} className="button green">Yes</button>
+                            <button onClick={toggleOwned} disabled={!state.owned} className="button red">No</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Notify:</td>
+                        <td className="onechoice fsz">
+                            <button onClick={toggleNotify} disabled={state.notify_while_paused} className="button green">Always</button>
+                            <button onClick={toggleNotify} disabled={!state.notify_while_paused} className="button orange">Only while running</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cooldown:</td>
+                        <td className="fsz">
+                            <button onClick={resetCooldown} disabled={state.timestamp === 0} className="button blue">Reset</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div className="buttons fsz">
+            <button onClick={() => dispatch(popPopup())} className="button red">Cancel</button>
+            <button onClick={applyChanges} className="button red">Apply</button>
+        </div>
+    </div>
+    );
+});
+
+export const PopupSetupGeneric2 = connect((state) => {
+    let newProps = {
+        generic2: state.userInfo.generic2,
+    }
+    return newProps;
+})((props) => {
+
+    const dispatch = useDispatch();
+
+    let workingInfo = props.generic2;
+    const [state, setState] = useState(workingInfo);
+
+    function toggleOwned(e) {
+        let newValue = !state.owned;
+        setState((previousState) => update(previousState, {
+            owned: {$set: newValue}
+        }));
+    }
+
+    function toggleNotify(e) {
+        let newValue = !state.notify_while_paused;
+        setState((previousState) => update(previousState, {
+            notify_while_paused: {$set: newValue}
+        }));
+    }
+
+    function resetCooldown(e) {
+        setState((previousState) => update(previousState, {
+            timestamp: {$set: 0}
+        }));
+    }
+
+    function applyChanges(e) {
+        dispatch(setRootObject({ key: "generic2", value: state }));
+        dispatch(popPopup());
+    }
+
+    return (
+        <div id="generic2SetupGUI" className="setupGUI generic2">
+        <div className="heading">
+            <h1>Generic 48m Timer Setup</h1>
+        </div>
+        <div className="main">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Display:</td>
+                        <td className="onechoice fsz">
+                            <button onClick={toggleOwned} disabled={state.owned} className="button green">Yes</button>
+                            <button onClick={toggleOwned} disabled={!state.owned} className="button red">No</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Notify:</td>
+                        <td className="onechoice fsz">
+                            <button onClick={toggleNotify} disabled={state.notify_while_paused} className="button green">Always</button>
+                            <button onClick={toggleNotify} disabled={!state.notify_while_paused} className="button orange">Only while running</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cooldown:</td>
+                        <td className="fsz">
+                            <button onClick={resetCooldown} disabled={state.timestamp === 0} className="button blue">Reset</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div className="buttons fsz">
+            <button onClick={() => dispatch(popPopup())} className="button red">Cancel</button>
+            <button onClick={applyChanges} className="button red">Apply</button>
+        </div>
+    </div>
+    );
+});
+
 const stringElementMap = {
     PopupPushDenied,
     PopupMultipleTabs,
@@ -1401,6 +1629,9 @@ const stringElementMap = {
     PopupSetupNightclub,
     PopupSetupImportExport,
     PopupSetupWheel,
+    PopupSetupCayo,
+    PopupSetupGeneric1,
+    PopupSetupGeneric2,
 }
 
 function createPopup(arr) {

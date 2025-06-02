@@ -1,7 +1,7 @@
 import React from 'react';
 
 export let defaultUserInfo = {
-    version: "2.0.2",
+    version: "2.0.3",
     recentWeekly: 0,
     settings: {
         hide_unowned: false,
@@ -171,6 +171,28 @@ export let defaultUserInfo = {
             x: 53.89,
             y: 66.46,
         },
+    },
+    cayo : {
+        owned: true,
+        muted: false,
+        notify_while_paused: false, 
+        timestamp: 0,
+        map_position: {
+            x: 77.89,
+            y: 77.46,
+        },
+    },
+    generic1 : {
+        owned: false,
+        muted: false,
+        notify_while_paused: false, 
+        timestamp: 0,
+    },
+    generic2 : {
+        owned: false,
+        muted: false,
+        notify_while_paused: false, 
+        timestamp: 0,
     },
 };
 
@@ -541,6 +563,18 @@ export const staticInfo = {
     wheel: {
         fullName: "Lucky Wheel",
         shortName: "Lucky Wheel",
+    },
+    cayo: {
+        fullName: "Cayo Perico",
+        shortName: "Cayo Perico",
+    },
+    generic1: {
+        fullName: "Special Cargo Tech",
+        shortName: "Special Cargo Tech",
+    },
+    generic2: {
+        fullName: "Generic",
+        shortName: "Generic",
     }
 }
 
@@ -549,6 +583,20 @@ export function shouldUpdate(userInfo) {
 }
 
 export function updateUserInfo(userInfo) {
+
+    if (!userInfo.cayo) {
+        userInfo.cayo = { ...defaultUserInfo.cayo };
+    }
+
+    if (!userInfo.generic1) {
+        userInfo.generic1 = { ...defaultUserInfo.generic1 };
+    }
+
+    if (!userInfo.generic2) {
+        userInfo.generic2 = { ...defaultUserInfo.generic2 };
+    }
+
+
     if (userInfo.version === "1.0.0") {
         userInfo.audio = {enabled: true};
         userInfo.bunker.name = "Bunker";

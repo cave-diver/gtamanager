@@ -17,6 +17,15 @@ export const slice = createSlice({
         setWheelTimestamp: (state, action) => {
             state.wheel.timestamp = action.payload;
         },
+        setCayoTimestamp: (state, action) => {
+            state.cayo.timestamp = action.payload;
+        },
+        setGeneric1Timestamp: (state, action) => {
+            state.generic1.timestamp = action.payload;
+        },
+        setGeneric2Timestamp: (state, action) => {
+            state.generic2.timestamp = action.payload;
+        },
         setImportExportCooldown: (state, action) => {
             state.importExport.cooldown = action.payload;
         },
@@ -39,7 +48,7 @@ export const slice = createSlice({
 });
 
 export const {
-    setResourceValue, setWheelTimestamp, setImportExportCooldown,
+    setResourceValue, setWheelTimestamp, setCayoTimestamp, setGeneric1Timestamp, setGeneric2Timestamp, setImportExportCooldown,
     toggleNotifications, setRootObject, toggleBusinessMuted, setUserInfo,
     runTick,
 } = slice.actions;

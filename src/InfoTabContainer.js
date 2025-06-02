@@ -6,6 +6,9 @@ import TabMCBusiness from './TabMCBusiness';
 import TabNightclub from './TabNightclub';
 import TabImportExport from './TabImportExport';
 import TabWheel from './TabWheel';
+import TabCayo from './TabCayo';
+import TabGeneric1 from './TabGeneric1';
+import TabGeneric2 from './TabGeneric2';
 import TabFees from './TabFees';
 import { useWindowDimensions, calculateScrollbarWidth, useWidthDetector } from './Utility';
 
@@ -20,6 +23,9 @@ const business_objects = {
     nightclub: <TabNightclub />,
     importExport: <TabImportExport />,
     wheel: <TabWheel />,
+    cayo: <TabCayo />,
+    generic1: <TabGeneric1 />,
+    generic2: <TabGeneric2 />,
 }
 
 const mapStateToProps = (state) => {

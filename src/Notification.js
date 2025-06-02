@@ -123,6 +123,18 @@ export function useNotifyBusiness(business) {
             setState(false);
             return;
         }
+
+        // Cayo
+        if (business === "cayo") {
+            if ((running || businessInfo.notify_while_paused) && new Date().getTime() - businessInfo.timestamp > (1000*60)*48) {
+                setState(true);
+                playAudioIfNecessary();
+                pushNotifyIfNecessary("wheel", "GTA V Business Manager", "Your Cayo Perico Heist should be ready to set up.");
+                return;
+            }
+            setState(false);
+            return;
+        }
         
         if (!running) {
             setState(false);

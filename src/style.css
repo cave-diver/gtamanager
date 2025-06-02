@@ -317,6 +317,22 @@ input[type=range]::-ms-thumb {
   background-position: -199px -67px;
 }
 
+.icons-cayo {
+  background-position: -199px -67px;
+}
+
+.icons-generic1 {
+  background: none !important;
+  background-position: 0 0 !important;
+  #background-position: -260px -67px;
+}
+
+.icons-generic2 {
+  background: none !important;
+  background-position: 0 0 !important;
+  #background-position: -320px -67px;
+}
+
 .faded {
   opacity: 0.6;
 }
