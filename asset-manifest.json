@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/gtamanager/static/css/main.c1bc078c.css",
-    "main.js": "/gtamanager/static/js/main.ff184767.js",
+    "main.css": "/gtamanager/static/css/main.2a04cf48.css",
+    "main.js": "/gtamanager/static/js/main.81805806.js",
+    "static/media/generic2.png": "/gtamanager/static/media/generic2.7a57128da25ca043b281.png",
     "static/media/bg-2048.jpg": "/gtamanager/static/media/bg-2048.c30bfda6864a505de9f8.jpg",
     "static/media/bg-1024.jpg": "/gtamanager/static/media/bg-1024.102134957944537a11fe.jpg",
     "static/media/bg-512.jpg": "/gtamanager/static/media/bg-512.e36a17991c39a9174871.jpg",
@@ -14,16 +15,17 @@
     "static/media/import.png": "/gtamanager/static/media/import.55c3bb8d33395e4b5332.png",
     "static/media/meth.png": "/gtamanager/static/media/meth.96912666126f900c242f.png",
     "static/media/cash.png": "/gtamanager/static/media/cash.7629a95c6f0f5218455a.png",
+    "static/media/generic1.png": "/gtamanager/static/media/generic1.c3741280e34bea4f25e2.png",
     "static/media/coke.png": "/gtamanager/static/media/coke.54908c4231af356e3b3b.png",
     "static/media/forgery.png": "/gtamanager/static/media/forgery.149af1938bcc019b50ed.png",
     "static/media/bunker.png": "/gtamanager/static/media/bunker.4fd31c0c74a0cf774359.png",
     "index.html": "/gtamanager/index.html",
     "static/media/blank.png": "/gtamanager/static/media/blank.f9bc4eb159991a54d809.png",
-    "main.c1bc078c.css.map": "/gtamanager/static/css/main.c1bc078c.css.map",
-    "main.ff184767.js.map": "/gtamanager/static/js/main.ff184767.js.map"
+    "main.2a04cf48.css.map": "/gtamanager/static/css/main.2a04cf48.css.map",
+    "main.81805806.js.map": "/gtamanager/static/js/main.81805806.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1bc078c.css",
-    "static/js/main.ff184767.js"
+    "static/css/main.2a04cf48.css",
+    "static/js/main.81805806.js"
   ]
 }
